@@ -1,0 +1,135 @@
+*{
+    margin: 0px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat Alternates', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.padre{
+    background: #000;
+    display:flex;
+    flex-flow: column nowrap;
+}
+    .header{
+        background: url(../img/beach-1236581_1920.jpg); 
+        background-position: center;
+        background-attachment: contain;
+        background-size: cover;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+        .menu{
+            background: rgba(0,0,0, 0.3) ;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            /* height: 100px; */
+            border-bottom: 1px solid white;
+        }
+            .logo{
+                
+                flex: 1 1 auto;
+            }
+                .logo a{
+                    color: white;
+                }
+                .logo a:hover{
+                    color: #B2B2B2;
+                }
+            .nav{
+                display: flex;
+                flex: 5 1 auto;
+                flex-flow: row nowrap;
+            }
+            .nav a{
+                color:white;
+                font-size: 11px;
+                text-transform: uppercase   ;
+                padding: 0 10px;
+                letter-spacing: 2px;
+            }
+            .nav a:hover{
+                color: #B2B2B2;
+            }
+            .social{
+                display: flex;
+                flex-flow: row nowrap;
+                flex: 1 1 auto;
+                padding: 0 5px;
+            }
+            .social a{
+                color: white;
+            }
+            .social a:hover{
+                color: #B2B2B2;
+            }
+        .texto-principal{
+            background: #EAEAEA;
+        }
+            h1{
+                background: #4649FF;
+            }
+    .section{
+        background: #00ABB3; 
+        display:flex;
+           }
+        .articulos{
+            background: #3C4048 ;
+            flex: 3 1 auto;
+            display: flex;
+            flex-flow:row wrap;
+            align-items: center;       
+        }
+            .article{
+                background:#B2B2B2 ;
+                flex: 1 1 40%;
+            }
+            .navegacion{
+                background:#1D1CE5 ;
+                flex: 1 1 100%
+            }
+        .aside{
+            background:#4649FF ;
+            flex: 1 1 auto;
+        }
+            .publicidad{
+                background: #7978FF;
+            }
+    .footer{
+        background: #00ABB3;
+        display: flex;
+        justify-content: center;
+    }
+        .pie{
+            background: #3C4048 ;
+            width:300px;
+        }
+
+@media all and (max-width: 800px){
+    .section{
+        display:flex;
+        flex-direction: column;
+    }
+    .aside{
+        display:flex;
+        justify-content: center;
+    }
+}
+@media all and (max-width:500px){
+    .menu{
+        display: flex;
+        flex-direction: column;
+    }
+    .articulos{
+        display:flex;
+        flex-direction: column;
+    }
+    .aside{
+        display:flex;
+        flex-direction: column;
+    }
+}
