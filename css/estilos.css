@@ -19,6 +19,10 @@ a{
     padding: 0 20px;
 
 }
+.elemento-fijo{
+    position: fixed;
+    width: 100%;
+}
     .header{
         background: url(../img/beach-1236581_1920.jpg); 
         background-position: center;
@@ -66,6 +70,7 @@ a{
                 flex-flow: row nowrap;
                 flex: 1 1 auto;
                 padding: 0 5px;
+                justify-content: space-around;
             }
             .social a{
                 color: white;
@@ -76,7 +81,7 @@ a{
             }
         .texto-principal{
            /*  background: #EAEAEA; */
-           /* height: 580px; */
+           height: 600px;
            display: flex;
            align-items: center;
            /* flex-flow: column nowrap; */
@@ -86,12 +91,10 @@ a{
                 
                 font-family: 'Shalimar', cursive;
                 color: white;
-                font-size: 40px;
+                font-size: 30px;
                 font-weight: 300;
                 text-align: center;
-                line-height: 1.1;
-                
-                
+                line-height: 1.1;               
             }
     .section{
         background: #f7f7f7; 
@@ -102,7 +105,8 @@ a{
             flex: 3 1 auto;
             display: flex;
             flex-flow:row wrap;
-            align-items: center;       
+            align-items: center;  
+                 
         }
             .article{
                 flex: 1 1 40%;
@@ -117,11 +121,11 @@ a{
                 color: #f7f7f7;
                 font-size: 12 px;
                 padding: 10 0;
-                margin-top: -80px;
+                margin-top: -40px;
             }
             .article h2{
                 color: #fff;
-                font-size: 25px;
+                font-size: 15px;
                 text-transform: uppercase;
                 padding: 0 0 10px 0;
             }
@@ -142,7 +146,8 @@ a{
             .navegacion{
                 background:#000 ;
                 flex: 1 1 100%;
-                margin: 10px 10px 0 0px;
+                margin: 10px 10px 10px 0px;
+                
             }
             .navegacion a{
                 color: #fff;
@@ -150,6 +155,7 @@ a{
                 text-transform: uppercase;
                 padding: 0 10px;
                 letter-spacing: 2px;
+
             }
         .aside{
             flex: 1 1 auto;
@@ -159,9 +165,7 @@ a{
             text-align: justify;
             font-size: 12px;
         }
-        .aside img{
-            width: 95%;
-        }
+     
         .aside h4{
             background: #000;
             color: #fff;
@@ -170,13 +174,18 @@ a{
         }
             .publicidad{
                /*  background: #7978FF; */
+               margin-bottom: 20px;
+            }
+
+            .publicidad img{
+                width: 100%;
             }
         
     .footer{
         background: #000;
         display: flex;
         justify-content: center;
-        margin-top: 10px;
+        margin: 10px 0;
     }
         .pie{
             /* background: #3C4048 ; */
@@ -190,8 +199,20 @@ a{
             padding: 0 10px;
             letter-spacing: 2px;
         }
+        .pie a:hover{
+            color: #B2B2B2;
+        }
 
-@media all and (max-width: 800px){
+@media all and (max-width: 750px){
+    .logo a{
+        font-size: 20px;
+    }
+    .nav a{
+        font-size: 20px;
+    }
+    .social a{
+        font-size: 20px;
+    }
     .section{
         display:flex;
         flex-direction: column;
@@ -199,13 +220,28 @@ a{
     .aside{
         display:flex;
         justify-content: center;
+        
+    }
+    .publicidad{
+        padding: 5px;
+    }
+    h1{
+        font-size: 20px;         
+    }
+    .texto-principal{
+        height: 575px;
+     }
+     .article h3{
+        margin-top: -40px;
+    }
+    .article h2{
+        font-size: 15px;
+    }
+    .off{
+        display: none;
     }
 }
 @media all and (max-width:500px){
-    .menu{
-        display: flex;
-        flex-direction: column;
-    }
     .articulos{
         display:flex;
         flex-direction: column;
@@ -213,5 +249,8 @@ a{
     .aside{
         display:flex;
         flex-direction: column;
+    }
+    .off{
+        display: none;
     }
 }
